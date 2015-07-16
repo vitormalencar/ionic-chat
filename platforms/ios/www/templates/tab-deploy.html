@@ -1,0 +1,37 @@
+<ion-view view-title="Deploy">
+  <ion-content style="background: #e8ebf1;" class="padding">
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="img/deploy-header.png">
+        <h2>Ionic Deploy</h2>
+        <p>
+          Easy updates, no resubmission.
+        </p>
+      </div>
+      <div class="item item-body">
+        <p>
+          The Ionic deploy service makes it possible to ship new updates to your app without going through the app store
+          resubmission process. For many changes, Apple allows immediate app updating without resubmission, if the core
+          functionality or purpose of the app does not change.  See the docs
+          <a href="http://docs.ionic.io/deploy/">here</a> to learn more.
+        </p>
+        <p>
+          This app is currently checking for new code every {{updateMinutes}} minutes.  Try making a small change and uploading it with
+          <code>ionic upload</code>.  Once you deploy the change you'll see an option here to load in your new code!
+        </p>
+        <p>
+          Last checked: {{lastChecked | date:'short'}}
+        </p>
+        <p>
+          <div class="button-bar bar-dark">
+            <a class="button" ng-click="checkForUpdates()">Check</a>
+            <a class="button" ng-click="stopCheckingForUpdates()">Don't check</a>
+          </div>
+          <button class="button button-stable button-block button-pulse" ng-if="hasUpdate" ng-click="doUpdate()">
+            Update
+          </button>
+        </p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

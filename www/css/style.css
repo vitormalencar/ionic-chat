@@ -1,0 +1,54 @@
+body {
+    background-image:url(../img/bg.jpg);
+}
+
+.top {
+    background-color: #075e54;
+}
+
+.title {
+    color: white;
+    font-size: 22px !important;
+}
+
+.icon {
+    color: white;
+}
+
+.message-footer {
+    height: 50px;
+    border-top: 2px solid #075e54;
+}
+
+.message-footer input[type="text"] {
+    width: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.message-footer button {
+    background-color: red;
+    max-height: 50px;
+    padding-right: 15px;
+    padding-top: 0px;
+    line-height: 0px;
+}
+
+.message-footer button i {
+    font-size: 30px;
+    background-color: #FFF;
+}
+
+.item {
+    border: none;
+    background-color: transparent;
+}
+
+.item-complex .item-content,
+.item-radio .item-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 3px;
+}

@@ -1,0 +1,32 @@
+<ion-view view-title="Analytics">
+  <ion-content style="background: #e8ebf1;" class="padding">
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="img/analytics-pulse-header.png">
+        <h2>Ionic Analytics</h2>
+        <p>
+          Powerful usage analysis.
+        </p>
+      </div>
+      <div class="item item-body">
+        <p>
+          The Ionic Analytics service makes it easy to add powerful analytics to your hybrid mobile apps.
+        </p>
+        <p>
+          Unlike other analytics providers, Ionic can infer user behavior through the deep integration of the analytics
+          system with the UI layer. This means Ionic can automatically track taps and interactions and also associate
+          events with various states in your app's routing (to generate heatmaps, for example). Check out the docs
+          <a href="http://docs.ionic.io/analytics/">here</a>.
+        </p>
+        <p>
+          If you've added your API key correctly, then this app is already tracking analytics!  Hit one of the buttons
+          below to simulate some fake events.
+        </p>
+        <div class="button-bar bar-dark">
+          <a class="button" ng-click="trackPurchase()">Purchase</a>
+          <a class="button" ng-click="trackReview()">Review</a>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,34 @@
+<!--
+Create tabs with an icon and label, using the tabs-dark style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-background-dark tabs-color-stable">
+
+  <!-- Welcome Tab -->
+  <ion-tab title="Home" icon-off="ion-ios-ionic-outline" icon-on="ion-ionic" href="#/tab/home">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+
+  <!-- User Tab -->
+  <ion-tab title="User" icon-off="ion-ios-person-outline" icon-on="ion-ios-person" href="#/tab/user">
+    <ion-nav-view name="tab-user"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Push Tab -->
+  <ion-tab title="Push" icon-off="ion-ios-chatbubble-outline" icon-on="ion-ios-chatbubble" href="#/tab/push">
+    <ion-nav-view name="tab-push"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Deploy Tab -->
+  <ion-tab title="Deploy" icon-off="ion-ios-download-outline" icon-on="ion-ios-download" href="#/tab/deploy">
+    <ion-nav-view name="tab-deploy"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Analytics Tab -->
+  <ion-tab title="Analytics" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/analytics">
+    <ion-nav-view name="tab-analytics"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>

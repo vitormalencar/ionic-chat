@@ -1,0 +1,34 @@
+<ion-view view-title="Push">
+  <ion-content style="background: #e8ebf1;" class="padding">
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="img/push-header.png">
+        <h2>Ionic Push</h2>
+        <p>
+          Intuitive push notifications.
+        </p>
+      </div>
+      <div class="item item-body">
+        <p>
+          Ionic Push makes it easy to add powerful push notifications to your app, with everything from a powerful
+          REST API and webhook integration to a simple GUI for targeted notifications across all Ionic platforms.  See
+          the docs <a href="http://docs.ionic.io/push/">here</a> for more info.
+        </p>
+        <p>
+          Click the button below to register this device for push notifications, you should see your token show up right
+          away!
+        </p>
+        <p>
+          <strong>Please note: </strong>You need to use a physical device for Ionic Push.  Ionic View,
+          <code>ionic serve</code>, and emulators won't cut it.
+        </p>
+        <button class="button button-block button-dark" ng-click="pushRegister()">
+          Register
+        </button>
+        <button class="button button-block button-stable" ng-if="token" ng-click="sendPush()">
+          Send Notification
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
