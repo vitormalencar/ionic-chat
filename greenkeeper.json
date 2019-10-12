@@ -1,0 +1,19 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "platforms/ios/www/lib/ionic-service-analytics/package.json",
+        "platforms/ios/www/lib/ngCordova/package.json",
+        "plugins/com.ionic.keyboard/package.json",
+        "plugins/cordova-plugin-console/package.json",
+        "plugins/cordova-plugin-device/package.json",
+        "plugins/cordova-plugin-splashscreen/package.json",
+        "plugins/cordova-plugin-whitelist/package.json",
+        "www/lib/angular-animate/package.json",
+        "www/lib/angular-sanitize/package.json",
+        "www/lib/angular/package.json"
+      ]
+    }
+  }
+}
